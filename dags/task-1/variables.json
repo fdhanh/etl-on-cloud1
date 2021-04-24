@@ -3,5 +3,5 @@
 	"bucket_folder": "gs://task-1-folder",
 	"project_id"   : "etl-on-cloud",
 	"gce_region"   : "us-central1",
-	"gce_zone"	   : "us-central1-a"
+	"gce_zone"     : "us-central1-a"
 }
