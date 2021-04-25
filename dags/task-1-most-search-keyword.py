@@ -10,6 +10,8 @@ bucket_folder = models.Variable.get("bucket_folder")
 project_id = models.Variable.get("project_id") 
 gce_region = models.Variable.get("gce_region") 
 gce_zone = models.Variable.get("gce_zone") 
+output_full_table = models.Variable.get("task_1_schema_table_output_full")
+output_analyze_table = models.Variable.get("task_1_schema_table_output_output")
 
 default_args = {
     "start_date": datetime(2021,3,10),
@@ -43,7 +45,7 @@ with models.DAG(
             "JSONPath": bucket_folder + "/jsonSchema.json",
             "javascriptTextTransformGcsPath": bucket_folder + "/transform.js",
             "inputFilePattern": bucket_input + "/search_{{ ds_nodash }}.csv",
-            "outputTable": project_id + ":week2.search-keyword",
+            "outputTable": output_full_table,
             "bigQueryLoadingTemporaryDirectory": bucket_folder + "/tmp/",
         },
     )  
@@ -57,7 +59,7 @@ with models.DAG(
                ORDER BY search_count desc
                LIMIT 1;""",
         use_legacy_sql = False,
-        destination_dataset_table = 'etl-on-cloud:week2.daily-top-search',
+        destination_dataset_table = output_analyze_table,
         write_disposition = 'WRITE_APPEND'
     )
 
