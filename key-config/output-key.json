@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "etl-on-cloud",
+  "private_key_id": "c3200b4d384a3f7ba12cd028fecdebec608b8069",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDryzsKAs8NsEOa\nep26LeIFbNvlQVTuNV5EHrQK/NXOIIfyTwt4kKjCU3yoznBuAvYt7x0ylCAjwFYZ\n5tXqsCRkCZzGYAAp3vuCAiMDCTPNHTcbL+MvuwjbsoKAcj9HQNGe1RKQN+F/R4u8\ncM0GA7OB1Ov2gO7J43trSZ0f9GH4t07zBdEDYXifB34jAh8D70fOomdX6MLlkAVC\ndXHnrvl3b/fmi10zPHKfWtXbte1xZVcwnuOX7cfUFmnAB67X9+wit9nfAZNYaUdM\nvvwKpviSZeuv8+Aky53r1NZP9hIjm9uloa96u8wbz88s4URTxZmxD7tBo6TTRgiA\nhEy9OrxLAgMBAAECggEAAVW2MNlROL+dslstV2d5FxTFreePxoVw0ivmUwWZZEBU\n5K9D3lvbSLZWR1Jb2pOTtzDaVnX2NJ2bHyxqW5jBq/tN8uWKOrJzdAn1DshXjbqz\nnCjKPXPumefJy1ZaO1oHlcGZCE34rdLG3Ls6veT5eCuvZkbWkzgBc9sH0617fH/y\nX1oYqlORTVuPWComtzz8PNjIe97jmscVVKfsBNjFJjbXnqENyynNraK6HywY2BLg\nTvxpg2sTmFd+RJcVJTVo3Bzio2nt/yuh3Qw9AtnlkTHPKKoRluhb0EwTCqX0UR7M\nc1Kpo9fBshMwX1vgr3GsECxULg+OBRMJ7GMMW45/cQKBgQD2G/yq84RrJHRiBl0w\np0oW4A0GoO2tYzDPBv0KTLLeWXeu0OYmauC+gz9ctlWeozwuKZBoXWXQUO7rgpOn\nCSQ+FiNj/0ae0rjiJPFzr8s4KuEimHmRasGSQyqCqM7cgzLT1PFf5JR8dS9wLUe7\n0bnuVdnzRXjbny7My4egHyllKQKBgQD1RR3WaslMUqXyNdVQxFsHpW0gx/lgQxrT\nDF/Jv7On5LQWYydWX8COi5ys9671rIrhXB9jMdgAMauOvj8Ut6xNFbnkwwwYVaSk\nKy7JJ9wnJ8bIw9PV/QH1IB4EfcEcC0jlOt/yxi6HqMa0Lwn6I/SMaW4eqNtgk0Yo\nF64v/sVwUwKBgH6QX/zuJLAQ3EU47p3BuklPSYOaKQCc3RHqjyDH1sigC/t79I/X\nMOLojiI4polheuZme5wgQ+bAaE33JcWl3tyK+AJJ2mB9D5VE2GLdCc5FxufKr+IH\nm6qDHg55j4A5fF8RyFu/KllizlWLA7PkJBEcV2xS0tdm4mNxW7sNq3UZAoGADNvu\n0IsQuruqj6Ra5r0kuKXnrsxNOsrJ4T7I1t8CIE9RUcspCNJEWjTfpgHmXmMJdP9L\ndfvrAzeXcwhubjujAPeeo2vGepAi7aiF723zkOn49hWuSY3WSG/CoyGkuj+tNrd7\nflL9pYcnw9Kjh0XTUHlGmLzpo4qVJwz2yPVmjJkCgYEAzUpORd8K9qrmUX/OGlG6\nnp89cPojoAUFFJ4VlYHjKofc2UeMzaeqiCe18qLltdLVMyGOUV4rQIDZVQYAMGHj\nblrmLRXFbxBI3kWVpMhVTT04EECdJGePDmP/dbl02GgeJyEiEoX5z9ajJZRbDHOE\nfxuVUsuhFCeP4ROuV8XXs38=\n-----END PRIVATE KEY-----\n",
+  "client_email": "service-acc-task1@etl-on-cloud.iam.gserviceaccount.com",
+  "client_id": "102619059010322696549",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/service-acc-task1%40etl-on-cloud.iam.gserviceaccount.com"
+}

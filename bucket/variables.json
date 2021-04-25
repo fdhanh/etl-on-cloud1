@@ -2,6 +2,8 @@
 	"bucket_input" : "gs://task-1-search-keyword",
 	"bucket_folder": "gs://task-1-folder",
 	"project_id"   : "etl-on-cloud",
+	"src_project_id" : "pkl-playing-fields",
 	"gce_region"   : "us-central1",
-	"gce_zone"     : "us-central1-a"
+	"gce_zone"     : "us-central1-a",
+	"key_path"	   : "/home/airflow/gcs/data/"
 }
