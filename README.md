@@ -1,4 +1,4 @@
-# ETL on cloud with Google Cloud Platform environment
+# ETL on cloud with Google Cloud Platform 
 
 ## Case 1
 How to pull data from cloud storage, move it into BigQuery, and looking for what was the most search keyword of the day, and run composer for daily schedule.
