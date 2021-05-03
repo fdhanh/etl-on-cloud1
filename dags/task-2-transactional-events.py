@@ -8,21 +8,25 @@ import pandas as pd
 project_id = models.Variable.get("project_id") 
 src_project_id = models.Variable.get("src_project_id")
 bucket_folder = models.Variable.get("bucket_folder")  
-key_path = models.Variable.get("key_path") 
+source_credential = models.Variable.get("source_credential")
+own_credential = models.Variable.get("own_credential")
 
 def value(col):
     int_value = ['transaction_id', 'transaction_detail_id', 
-                'purchase_quantity', 'purchase_amount']
+                'purchase_quantity']
     str_value = ['transaction_number', 'purchase_payment_method', 
                  'purchase_source', 'product_id']
+    float_value = ['purchase_amount']
     if col in int_value:
         return 'value.int_value' 
-    return 'value.string_value' 
-
+    elif col in str_value:
+        return 'value.string_value' 
+    return 'value.float_value'
+    
 def integrateTransaction(**kwargs):
     ## push data from bigquery another user using credential key
 
-    credentials = service_account.Credentials.from_service_account_file(key_path+"input-key.json")
+    credentials = service_account.Credentials.from_service_account_file(source_credential)
     client = bigquery.Client(credentials= credentials,project=src_project_id)
     sql = f"""SELECT * 
             FROM pkl-playing-fields.unified_events.event 
@@ -55,7 +59,7 @@ def integrateTransaction(**kwargs):
         entity.append(temp_row_entity)
 
     #push data to your own bigquery
-    credentials = service_account.Credentials.from_service_account_file(key_path+"output-key.json")
+    credentials = service_account.Credentials.from_service_account_file(own_credential)
     pd.DataFrame(entity).to_gbq(destination_table = "week2.transaction-events",
                                 project_id = project_id,
                                 if_exists = "replace",

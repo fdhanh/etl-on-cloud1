@@ -1,9 +1,13 @@
 {
-	"bucket_input" : "gs://task-1-search-keyword",
-	"bucket_folder": "gs://task-1-folder",
+	"bucket_input" : "gs://search-keyword-dataset",
+	"bucket_folder": "gs://week2-bucket-folder",
 	"project_id"   : "etl-on-cloud",
 	"src_project_id" : "pkl-playing-fields",
 	"gce_region"   : "us-central1",
 	"gce_zone"     : "us-central1-a",
-	"key_path"	   : "/home/airflow/gcs/data/"
+	"key_path"	   : "/home/airflow/gcs/data/",
+	"task_1_schema_table_output_full" : "etl-on-cloud:week2.search-keyword",
+	"task_1_schema_table_output_analyze" : "etl-on-cloud:week2.daily-top-search",
+	"source_credential": "/home/airflow/gcs/data/input-key.json",
+	"own_credential": "/home/airflow/gcs/data/output-key.json"
 }
